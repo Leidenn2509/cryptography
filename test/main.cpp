@@ -1,14 +1,14 @@
 #include <iostream>
 #include <cmath>
 
-uint64_t fast_pow(uint64_t base, uint64_t x, uint64_t p = std::numeric_limits<uint64_t>::max()) {
+uint64_t fast_pow(uint64_t base, uint64_t power, uint64_t p = std::numeric_limits<uint64_t>::max()) {
     uint64_t res = 1;
-    for(uint64_t i = 0; i < std::log2(x) + 1; ++i) {
-        if (x%2 == 1) {
+    for(uint64_t i = 0; i < std::log2(power) + 1; ++i) {
+        if (power % 2 == 1) {
             res = std::fmod(res*base, p);
         }
         base = std::fmod(base*base, p);
-        x = x/2;
+        power = power / 2;
     }
     return res;
 }
