@@ -14,7 +14,6 @@ uint64_t fast_pow(uint64_t base, uint64_t x, uint64_t p = std::numeric_limits<ui
 }
 
 int main() {
-    uint64_t a = 5; // 101
     std::cout << fast_pow(2, 10, 10) << std::endl;
     std::cout << std::fmod(23, 20) << std::endl;
     return 0;
