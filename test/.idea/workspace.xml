@@ -76,6 +76,7 @@
       <workItem from="1568708608920" duration="776000" />
       <workItem from="1568710283073" duration="513000" />
       <workItem from="1568711995290" duration="250000" />
+      <workItem from="1569325683077" duration="1052000" />
     </task>
     <task id="LOCAL-00001" summary="simple fast exp">
       <created>1568703433712</created>
@@ -103,5 +104,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple fast exp" />
     <option name="LAST_COMMIT_MESSAGE" value="simple fast exp" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="std::log2(power)" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
