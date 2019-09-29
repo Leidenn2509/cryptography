@@ -9,7 +9,7 @@
 #include <limits>
 
 
-uint64_t fast_pow(uint64_t base, uint64_t power, uint64_t p = std::numeric_limits<uint64_t>::max());
+uint64_t fast_pow(uint64_t base, int64_t power, uint64_t p = std::numeric_limits<uint64_t>::max());
 uint64_t gcd(uint64_t a, uint64_t b, int64_t *x = nullptr, int64_t *y = nullptr);
 uint64_t inv(uint64_t m, uint64_t p);
 

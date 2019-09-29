@@ -7,7 +7,12 @@
 #include <cmath>
 #include <array>
 
-uint64_t fast_pow(uint64_t base, uint64_t power, uint64_t p) {
+uint64_t fast_pow(uint64_t base, int64_t power, uint64_t p) {
+    base = std::fmod(base, p);
+    if(power < 0) {
+        base = inv(base, p);
+        power = -power;
+    }
     uint64_t res = 1;
     uint64_t t = std::log2(power) + 1;
     for (uint64_t i = 0; i < t; ++i) {
