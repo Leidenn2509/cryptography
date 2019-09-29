@@ -12,15 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="774e7c90-e620-4b32-9e17-363313243b5c" name="Default Changelist" comment="fix fast_pow">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alexander_raish.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypt_utils.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypt_utils.hpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/diffie_hellman_system.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/diffie_hellman_system.hpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/diffie_hellman_user.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/diffie_hellman_user.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypt_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/crypt_utils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypt_utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/crypt_utils.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,7 +97,7 @@
       <workItem from="1568708608920" duration="776000" />
       <workItem from="1568710283073" duration="513000" />
       <workItem from="1568711995290" duration="250000" />
-      <workItem from="1569325683077" duration="4636000" />
+      <workItem from="1569325683077" duration="5486000" />
     </task>
     <task id="LOCAL-00001" summary="simple fast exp">
       <created>1568703433712</created>
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569328240794</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gcd func">
+      <created>1569776988414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569776988414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple fast exp" />
     <MESSAGE value="fix fast_pow" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix fast_pow" />
+    <MESSAGE value="gcd func" />
+    <option name="LAST_COMMIT_MESSAGE" value="gcd func" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -20,14 +20,17 @@ uint64_t fast_pow(uint64_t base, uint64_t power, uint64_t p) {
     return res;
 }
 
-uint64_t gcd(uint64_t a, uint64_t b, uint64_t *x, uint64_t *y) {
-    std::array<uint64_t, 3> u{a, 1, 0};
-    std::array<uint64_t, 3> v{b, 0, 1};
-    std::array<uint64_t, 3> t{0, 0, 0};
+uint64_t gcd(uint64_t a, uint64_t b, int64_t *x, int64_t *y) {
+    std::array<int64_t, 3> u{static_cast<int64_t>(a), 1, 0};
+    std::array<int64_t, 3> v{static_cast<int64_t>(b), 0, 1};
+    std::array<int64_t, 3> t{0, 0, 0};
     uint64_t q = 0;
     while (v[0] != 0) {
         q = u[0] / v[0];
-        t = {u[0] % v[0], u[1] - q * v[1], u[2] - q * v[2]};
+        t = {
+                u[0] % v[0],
+                static_cast<int64_t>(u[1] - q * v[1]),
+                static_cast<int64_t>(u[2] - q * v[2])};
         u = v;
         v = t;
     }
@@ -38,4 +41,13 @@ uint64_t gcd(uint64_t a, uint64_t b, uint64_t *x, uint64_t *y) {
         *y = u[2];
     }
     return u[0];
+}
+
+uint64_t inv(uint64_t m, uint64_t p) {
+    int64_t x;
+    gcd(m, p, &x);
+    if (x < 0) {
+        x += p;
+    }
+    return x;
 }
