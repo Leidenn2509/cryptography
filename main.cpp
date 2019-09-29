@@ -3,6 +3,6 @@
 #include "crypt_utils.hpp"
 
 int main() {
-    std::cout << gcd(10, 15) << std::endl << gcd(28, 19) << std::endl;
+    std::cout << fast_pow(5, -2, 11);
     return 0;
 }
