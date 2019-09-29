@@ -11,8 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="774e7c90-e620-4b32-9e17-363313243b5c" name="Default Changelist" comment="">
+    <list default="true" id="774e7c90-e620-4b32-9e17-363313243b5c" name="Default Changelist" comment="fix fast_pow">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alexander_raish.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crypt_utils.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crypt_utils.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diffie_hellman_system.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diffie_hellman_system.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diffie_hellman_user.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diffie_hellman_user.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,6 +31,20 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -38,6 +60,7 @@
   <component name="ProjectId" id="1QhLXHBZkzwN1Lty1GEPPvbcBFc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
@@ -76,7 +99,7 @@
       <workItem from="1568708608920" duration="776000" />
       <workItem from="1568710283073" duration="513000" />
       <workItem from="1568711995290" duration="250000" />
-      <workItem from="1569325683077" duration="1052000" />
+      <workItem from="1569325683077" duration="4636000" />
     </task>
     <task id="LOCAL-00001" summary="simple fast exp">
       <created>1568703433712</created>
@@ -85,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568703433712</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix fast_pow">
+      <created>1569328240794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569328240794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,7 +133,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple fast exp" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple fast exp" />
+    <MESSAGE value="fix fast_pow" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix fast_pow" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

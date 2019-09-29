@@ -3,4 +3,4 @@ project(test)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(test main.cpp)
+add_executable(test main.cpp diffie_hellman_user.cpp diffie_hellman_system.cpp crypt_utils.cpp)
