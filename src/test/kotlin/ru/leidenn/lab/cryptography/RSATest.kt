@@ -6,19 +6,17 @@ import org.junit.jupiter.api.Test
 import java.math.BigInteger
 import kotlin.random.Random
 
-class ElGamalTest {
+class RSATest {
     @Test
     fun test() {
-        val p = BigInteger.valueOf(30803)
-        val g = BigInteger.valueOf(2)
-        val users = List(10) { ElGamal(p, g) }
-        val send = mutableListOf<Triple<ElGamal, BigInteger, ElGamal>>()
+        val users = List(10) { RSA() }
+        val send = mutableListOf<Triple<RSA, BigInteger, RSA>>()
         users.forEach { a ->
             users.forEach { b ->
                 if (a != b) {
                     var message: BigInteger
                     do {
-                        message = Random.nextBigInteger(BigInteger.valueOf(15))
+                        message = Random.nextBigInteger(BigInteger.valueOf(999))
                     } while (message <= BigInteger.ONE)
                     a.sendTo(message, b)
                     send.add(Triple(a, message, b))
