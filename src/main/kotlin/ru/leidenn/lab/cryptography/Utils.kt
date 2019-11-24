@@ -5,7 +5,6 @@ import kotlin.math.log2
 import kotlin.random.Random
 
 
-
 val javaRandom = java.util.Random()
 
 //const val MAX: BigInteger = BigInteger::max
@@ -15,13 +14,21 @@ fun Random.nextBigInteger(n: BigInteger): BigInteger {
     var attempt = 0
     var res: BigInteger
     do {
-        if(attempt > 10) {
+        if (attempt > 10) {
             length -= 1
             attempt = 0
         }
         res = BigInteger(length, javaRandom)
         attempt += 1
     } while (res > n)
+    return res
+}
+
+fun Random.nextPrimeBigInteger(n: BigInteger): BigInteger {
+    var res: BigInteger
+    do {
+        res = Random.nextBigInteger(n)
+    } while (!res.isPrime())
     return res
 }
 
@@ -92,4 +99,15 @@ fun BigInteger.isPrime(): Boolean {
         i = i.add(two)
     }
     return true
+}
+
+fun pWithGenerator(n: BigInteger): Pair<BigInteger, BigInteger> {
+    val q: BigInteger = Random.nextPrimeBigInteger(n)
+    val p = BigInteger.valueOf(2) * q + BigInteger.ONE
+    var g: BigInteger
+    val pp = p - BigInteger.ONE
+    do {
+        g = Random.nextBigInteger(p)
+    } while (!(BigInteger.ONE < g) || !(g < pp) || !(g.fastPow(q, p) != BigInteger.ONE))
+    return p to g
 }
