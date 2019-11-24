@@ -4,14 +4,23 @@ import java.math.BigInteger
 import kotlin.math.log2
 import kotlin.random.Random
 
+
+
 val javaRandom = java.util.Random()
 
 //const val MAX: BigInteger = BigInteger::max
 
 fun Random.nextBigInteger(n: BigInteger): BigInteger {
+    var length = n.bitLength()
+    var attempt = 0
     var res: BigInteger
     do {
-        res = BigInteger(n.bitLength(), javaRandom)
+        if(attempt > 10) {
+            length -= 1
+            attempt = 0
+        }
+        res = BigInteger(length, javaRandom)
+        attempt += 1
     } while (res > n)
     return res
 }
@@ -61,4 +70,26 @@ fun fastInv(m: BigInteger, p: BigInteger): BigInteger {
         x += p
     }
     return x
+}
+
+fun BigInteger.isPrime(): Boolean {
+    //check via BigInteger.isProbablePrime(certainty)
+    if (!isProbablePrime(5))
+        return false
+
+    //check if even
+    val two = BigInteger.valueOf(2)
+    if (two != this && BigInteger.ZERO == this.mod(two))
+        return false
+
+    //find divisor if any from 3 to 'number'
+    var i = BigInteger.valueOf(3)
+    val top = this.sqrt()
+    while (i.multiply(i).compareTo(top) < 1) { //start from 3, 5, etc. the odd number, and look for a divisor if any
+        if (BigInteger.ZERO == this.mod(i))
+        //check if 'i' is divisor of 'number'
+            return false
+        i = i.add(two)
+    }
+    return true
 }
