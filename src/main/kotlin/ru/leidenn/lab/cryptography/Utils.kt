@@ -79,6 +79,8 @@ fun fastInv(m: BigInteger, p: BigInteger): BigInteger {
     return x
 }
 
+fun Long.toBigInteger(): BigInteger = BigInteger.valueOf(this)
+
 fun BigInteger.isPrime(): Boolean {
     //check via BigInteger.isProbablePrime(certainty)
     if (!isProbablePrime(5))
