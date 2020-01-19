@@ -24,6 +24,14 @@ fun Random.nextBigInteger(n: BigInteger): BigInteger {
     return res
 }
 
+fun Random.nextBigIntegerLess(n: BigInteger): BigInteger {
+    var buf: BigInteger
+    do {
+        buf = Random.nextBigInteger(n)
+    } while (buf >= n)
+    return buf
+}
+
 fun Random.nextPrimeBigInteger(n: BigInteger): BigInteger {
     var res: BigInteger
     do {
