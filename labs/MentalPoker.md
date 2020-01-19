@@ -1,4 +1,4 @@
-#### RSA
+#### Ментальный покер
 Мной был написан класс [MentalPoker](/src/main/kotlin/ru/leidenn/lab/cryptography/MentalPoker.kt) 
 
 
